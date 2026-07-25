@@ -1,54 +1,46 @@
-# Hey, I'm Kyle 👋
+# Kyle
 
-I build open tools for DJs and audio hackers — hardware and software.
+Rust, real-time audio, and electronics. Mostly tools I needed and couldn't
+find.
 
-## 🎛️ Current project — [openDVS](https://github.com/fobiat/openDVS)
+## Rivet — rebuild your workstation from a commit
 
-An **open-source Digital Vinyl System**: control digital decks with real
-turntables and timecode vinyl, without the locked-down hardware.
+**[rivet.thattkyle.workers.dev](https://rivet.thattkyle.workers.dev)**
 
-- 🦀 Clean-room **timecode engine in Rust** — no_std, allocation-free,
-  real-time safe; locks absolute position ~33 ms after a needle drop
-- 📀 An **open, freely-pressable timecode format** — the spec is
-  CC-BY-SA with a royalty-free implementation grant, so anyone can press
-  or decode it. No vendor offers that.
-- 🔌 **Open hardware** (CERN-OHL-S) that doubles as a generic
-  class-compliant USB audio interface
-- ⚖️ GPL-3.0 · CERN-OHL-S-2.0 · CC-BY-SA-4.0
+A Git-native snapshot tool for Linux and macOS workstations. It records the
+explicit packages and the configuration you approve — not a disk image, not
+your whole home folder.
 
-Status: `v0.1.0-alpha` — engine + CLI working, validated against a
-synthetic signal corpus; real-vinyl testing and custom hardware are next.
-Try it: [releases](https://github.com/fobiat/openDVS/releases) ·
-[the spec](https://github.com/fobiat/openDVS/blob/main/spec/odvs-timecode-v1.md)
+- Arch, Debian/Ubuntu, Fedora/RHEL, openSUSE, NixOS, Void, and macOS on Apple
+  Silicon and Intel
+- Restores across distro families: native packages resolve through a
+  cross-distro package map instead of being guessed at
+- Snapshots to Git, a local/NAS path, an rclone remote, or restic — encrypted
+  at rest with `age`
+- Secrets are excluded by default; anything you do want carried goes through an
+  explicit vault whose private key never leaves the machine
+- Terminal UI over drift, history, per-file diffs, and the restore plan
 
-## 🔬 Ohmic Labs — the hardware bench
+Rust, dual-licensed MIT OR Apache-2.0. Currently `v0.9.0-rc.1`.
 
-My label for handmade test & measurement gear and electronics projects:
+## Ohmic Labs
 
-- 🌡️ **PT100 Simulator** — handheld RTD temperature simulator:
-  ESP32 + OLED + rotary encoder, precision film resistors, −200 °C to
-  +200 °C per IEC 60751, 18650-powered with USB-C charging. Built by
-  hand, firmware in C++ (PlatformIO). *(repo going public once it's
-  polished)*
-- More on the bench: embedded builds around ESP32/Arduino, a vinyl BPM
-  counter, and the analog front ends feeding into openDVS Rev A
+A side bench for handmade test gear and embedded work: a PT100 RTD temperature
+simulator (ESP32, precision film resistors, IEC 60751, USB-C charging), a
+tap-tempo BPM counter for vinyl DJing, and assorted ESP32 builds. Repos go
+public as they get finished.
 
-## 🏠 Also running
+Also in progress: an open-source Digital Vinyl System — a clean-room `no_std`
+timecode engine in Rust and a freely pressable timecode vinyl format. Private
+while the format settles.
 
-- [k3s-homelab](https://github.com/fobiat/k3s-homelab) — home Kubernetes
-  on k3s + Flux GitOps, deployed via GitHub Actions
+## Elsewhere
 
-## 🔧 Things I care about
+- [k3s-homelab](https://github.com/fobiat/k3s-homelab) — home Kubernetes on k3s
+  and Flux, deployed with GitHub Actions
+- [openBPM](https://github.com/fobiat/openBPM) — ESP32 beatmatch assistant for
+  vinyl DJing
 
-- Real-time audio and DSP (the fun kind of hard)
-- Vinyl and turntablism — keeping the feel, opening the tech
-- Electronics: phono stages, converters, PCBs that hum only when they should
-- Test gear you can trust because you built and calibrated it yourself
-- Open licensing done properly — copyleft + open hardware + open formats
+## Contact
 
-## 📫 Contact
-
-**kyle@ohmic-labs.co.uk**
-
----
-<sub>🐧 Arch Linux, naturally.</sub>
+kyle@ohmic-labs.co.uk
