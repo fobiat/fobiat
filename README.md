@@ -5,7 +5,7 @@ find.
 
 ## Rivet — rebuild your workstation from a commit
 
-**[rivet.thattkyle.workers.dev](https://rivet.thattkyle.workers.dev)**
+**[rivet.fobiat.workers.dev](https://rivet.fobiat.workers.dev)**
 
 A Git-native snapshot tool for Linux and macOS workstations. It records the
 explicit packages and the configuration you approve — not a disk image, not
@@ -21,7 +21,11 @@ your whole home folder.
   explicit vault whose private key never leaves the machine
 - Terminal UI over drift, history, per-file diffs, and the restore plan
 
-Rust, dual-licensed MIT OR Apache-2.0. Currently `v0.9.0-rc.1`.
+Rust, dual-licensed MIT OR Apache-2.0. Currently `v1.0.1`.
+
+```sh
+curl -sSf https://rivet.fobiat.workers.dev/install | sh
+```
 
 ## Ohmic Labs
 
