@@ -3,6 +3,24 @@
 Rust, real-time audio, and electronics. Mostly tools I needed and couldn't
 find.
 
+## Applejack
+
+A ground-up C# rewrite of a Garry's Mod roleplay gamemode for
+[S&box](https://sbox.game) — scarcity-driven city RP, not a
+jobs-and-printers moneymaker. The original ships as a behavioural
+reference only; nothing of its implementation survives into the
+rewrite.
+
+- Architecture-first: 14 design documents and 6 ADRs written and
+  reviewed before a line of gameplay code
+- Host-authoritative networking, one inventory model with real item
+  identity, data-driven content that needs no compiler to extend
+- Documents its own predecessor's defects — SQL built by string
+  concatenation, a monkey-patched global hook dispatcher — so none
+  of them get reproduced in the name of authenticity
+
+C#. Private while the framework takes shape.
+
 ## Rivet — rebuild your workstation from a commit
 
 **[rivet.fobiat.workers.dev](https://rivet.fobiat.workers.dev)**
