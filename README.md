@@ -45,6 +45,24 @@ Rust, dual-licensed MIT OR Apache-2.0. Currently `v1.0.1`.
 curl -sSf https://rivet.fobiat.workers.dev/install | sh
 ```
 
+## rivet-workstation — an AI-first developer workstation
+
+A daemon-driven workspace tool, separate from the snapshot tool above but
+built to hand off to it: `ws up` turns a `workstation.yaml` into a
+reproducible, running project workspace — terminals, build watchers,
+services, databases, logs, and AI coding assistant panes — restorable onto
+a fresh machine via Rivet.
+
+- A daemon supervises and observes; thin clients (a CLI and a Ratatui TUI)
+  drive it, so state survives a daemon restart without duplicating sessions
+- Service dependency ordering, health checks, and restart policy
+- Two interchangeable session backends — tmux, and a native terminal core
+  (PTY supervision, VT parsing, its own grid and scrollback)
+- A plugin SDK with capability-gated subprocess RPC, and AI provider panes
+  with context injection
+
+Rust. Private while the milestones land.
+
 ## Ohmic Labs
 
 A side bench for handmade test gear and embedded work: a PT100 RTD temperature
