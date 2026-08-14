@@ -11,11 +11,11 @@ from a commit. Rivet records the packages you installed on purpose and the
 config you approve, not a disk image. Restores work across distro families,
 and secrets stay out unless you explicitly vault them.
 
-```sh
-curl -sSf https://fobiat.dev/rivet/install | sh
-```
+Not out yet. The site and [docs](https://fobiat.dev/rivet/docs/introduction/)
+are already live at **[fobiat.dev/rivet](https://fobiat.dev/rivet)**, and
+that's where the release will land.
 
-**[fobiat.dev/rivet](https://fobiat.dev/rivet)** · [docs](https://fobiat.dev/rivet/docs/introduction/) · Rust, MIT OR Apache-2.0
+Rust, MIT OR Apache-2.0.
 
 ## Applejack
 
