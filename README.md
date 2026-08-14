@@ -1,86 +1,43 @@
 # Kyle
 
 Rust, real-time audio, and electronics. Mostly tools I needed and couldn't
-find.
+find. The short versions are below; the long ones live at
+**[fobiat.dev](https://fobiat.dev)**.
+
+## Rivet
+
+Git-native workstation snapshots for Linux and macOS: rebuild your machine
+from a commit. Rivet records the packages you installed on purpose and the
+config you approve, not a disk image. Restores work across distro families,
+and secrets stay out unless you explicitly vault them.
+
+```sh
+curl -sSf https://fobiat.dev/rivet/install | sh
+```
+
+**[fobiat.dev/rivet](https://fobiat.dev/rivet)** · [docs](https://fobiat.dev/rivet/docs/introduction/) · Rust, MIT OR Apache-2.0
 
 ## Applejack
 
-A ground-up C# rewrite of a Garry's Mod roleplay gamemode for
-[S&box](https://sbox.game) — scarcity-driven city RP, not a
-jobs-and-printers moneymaker. The original ships as a behavioural
-reference only; nothing of its implementation survives into the
-rewrite.
+A scarcity-driven city roleplay gamemode for [S&box](https://sbox.game),
+rebuilt from scratch in C# on Source 2, against a live editor from the first
+commit. The Garry's Mod original survives as a behavioural reference only:
+its gameplay values are canon, its implementation is not.
 
-- Architecture-first: 14 design documents and 6 ADRs written and
-  reviewed before a line of gameplay code
-- Host-authoritative networking, one inventory model with real item
-  identity, data-driven content that needs no compiler to extend
-- Documents its own predecessor's defects — SQL built by string
-  concatenation, a monkey-patched global hook dispatcher — so none
-  of them get reproduced in the name of authenticity
+The repo stays private while the framework takes shape, but the design docs,
+wireframes, and hosting guides are already public at
+**[fobiat.dev/applejack](https://fobiat.dev/applejack)**.
 
-C#. Private while the framework takes shape.
+## Everything else
 
-## Rivet — rebuild your workstation from a commit
+| Project | What it is |
+| --- | --- |
+| **[rivet-workstation](https://fobiat.dev/rivet-workstation)** | An AI-first workstation: `ws up` turns a YAML file into a running project workspace (terminals, services, logs, AI assistant panes), owned by a daemon and restorable onto a fresh machine via Rivet. Rust, private while the milestones land. |
+| **[openBPM](https://fobiat.dev/openbpm)** | Tap-tempo BPM counter and beatmatch assistant for vinyl DJing on an ESP32: booth-legible digits, pitch %, and a drift timer so you know how long before your decks fall apart. [Source](https://github.com/fobiat/openBPM) is public. |
+| **openDVS** | An open Digital Vinyl System: a clean-room `no_std` timecode engine in Rust, a freely pressable timecode vinyl format, and open hardware that doubles as a USB audio interface. Private while the format settles. |
+| **Ohmic Labs** | A modular handheld instrument platform on one ESP32 + OLED + encoder core: a PT100 RTD simulator first, a 4-20 mA loop calibrator next. |
+| **[k3s-homelab](https://github.com/fobiat/k3s-homelab)** | The home cluster: k3s and Flux, deployed from GitHub Actions. |
 
-**[rivet.fobiat.workers.dev](https://rivet.fobiat.workers.dev)**
+---
 
-A Git-native snapshot tool for Linux and macOS workstations. It records the
-explicit packages and the configuration you approve — not a disk image, not
-your whole home folder.
-
-- Arch, Debian/Ubuntu, Fedora/RHEL, openSUSE, NixOS, Void, and macOS on Apple
-  Silicon and Intel
-- Restores across distro families: native packages resolve through a
-  cross-distro package map instead of being guessed at
-- Snapshots to Git, a local/NAS path, an rclone remote, or restic — encrypted
-  at rest with `age`
-- Secrets are excluded by default; anything you do want carried goes through an
-  explicit vault whose private key never leaves the machine
-- Terminal UI over drift, history, per-file diffs, and the restore plan
-
-Rust, dual-licensed MIT OR Apache-2.0. Currently `v1.0.1`.
-
-```sh
-curl -sSf https://rivet.fobiat.workers.dev/install | sh
-```
-
-## rivet-workstation — an AI-first developer workstation
-
-A daemon-driven workspace tool, separate from the snapshot tool above but
-built to hand off to it: `ws up` turns a `workstation.yaml` into a
-reproducible, running project workspace — terminals, build watchers,
-services, databases, logs, and AI coding assistant panes — restorable onto
-a fresh machine via Rivet.
-
-- A daemon supervises and observes; thin clients (a CLI and a Ratatui TUI)
-  drive it, so state survives a daemon restart without duplicating sessions
-- Service dependency ordering, health checks, and restart policy
-- Two interchangeable session backends — tmux, and a native terminal core
-  (PTY supervision, VT parsing, its own grid and scrollback)
-- A plugin SDK with capability-gated subprocess RPC, and AI provider panes
-  with context injection
-
-Rust. Private while the milestones land.
-
-## Ohmic Labs
-
-A side bench for handmade test gear and embedded work: a PT100 RTD temperature
-simulator (ESP32, precision film resistors, IEC 60751, USB-C charging), a
-tap-tempo BPM counter for vinyl DJing, and assorted ESP32 builds. Repos go
-public as they get finished.
-
-Also in progress: an open-source Digital Vinyl System — a clean-room `no_std`
-timecode engine in Rust and a freely pressable timecode vinyl format. Private
-while the format settles.
-
-## Elsewhere
-
-- [k3s-homelab](https://github.com/fobiat/k3s-homelab) — home Kubernetes on k3s
-  and Flux, deployed with GitHub Actions
-- [openBPM](https://github.com/fobiat/openBPM) — ESP32 beatmatch assistant for
-  vinyl DJing
-
-## Contact
-
-kyle@ohmic-labs.co.uk
+[kyle@ohmic-labs.co.uk](mailto:kyle@ohmic-labs.co.uk)
