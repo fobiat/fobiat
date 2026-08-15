@@ -1,8 +1,28 @@
 # Kyle
 
-Rust, real-time audio, and electronics. Mostly tools I needed and couldn't
-find. The short versions are below; the long ones live at
+Rust, real-time audio, electronics, and C# game tooling. Mostly things I
+needed and couldn't find. The short versions are below; the long ones live at
 **[fobiat.dev](https://fobiat.dev)**.
+
+## s&box MCP Server & AI Skill
+
+Two halves of the same problem, and the one thing here you can install today.
+
+s&box borrows `GameObject` and `Component` from Unity and then diverges nearly
+everywhere else, so a coding agent writes `MonoBehaviour` and `void Update()`
+into a Source 2 project and nothing warns you. The **skill** is 17 reference
+files that teach an agent the real API, every entry traceable to engine source
+at a named version. The **MCP server** is 18 tools that ask the running editor
+what is actually true, for the afternoons where you edit a file and the engine
+never notices.
+
+Released on
+**[sbox.game](https://sbox.game/fobiat/sbox_mcp_server/)** as
+`fobiat.sbox_mcp_server`, or clone
+**[the repo](https://github.com/fobiat/sbox-skill)**. Written up at
+**[fobiat.dev](https://fobiat.dev/blog/p/sbox-skill)**.
+
+MIT, engine 26.08.05.
 
 ## Rivet
 
