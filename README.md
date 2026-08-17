@@ -1,6 +1,4 @@
-<a href="https://fobiat.dev"><img src="assets/brand/banner-dark.png" alt="fobiat" width="100%"></a>
-
-![vibe-coded](https://img.shields.io/badge/vibe--coded-0%25-critical?style=flat-square) *(trust me)*
+<a href="https://fobiat.dev"><img src="assets/brand/banner-thin.png" alt="fobiat" width="100%"></a>
 
 # Kyle
 
@@ -15,16 +13,21 @@ electronics, and C# game tooling, mostly. Long-form writeups live at
 | Project | What it is | Links |
 | --- | --- | --- |
 | **home-ops** | Single-node Kubernetes homelab. Talos Linux, Flux, SOPS+age, Tailscale-first. | [Repo](https://github.com/fobiat/home-ops) |
-| **sbox-skill** | Teaches any coding agent to write s&box C# that actually compiles: 17 source-verified reference files plus an 18-tool MCP server for the editor. Stops agents writing Unity patterns into a Source 2 project. | [Repo](https://github.com/fobiat/sbox-skill) · [sbox.game](https://sbox.game/fobiat/sbox_mcp_server/) |
-| **openBPM** | Tap-tempo BPM counter and beatmatch assistant for vinyl DJing on an ESP32: booth-legible digits, pitch %, and a drift timer. | [Repo](https://github.com/fobiat/openBPM) · [fobiat.dev/openbpm](https://fobiat.dev/openbpm) |
+| **sbox-skill** | Teaches any coding agent to write s&box C# that actually compiles: 17 source-verified reference files plus an 18-tool MCP server for the editor. Stops agents writing Unity patterns into a Source 2 project. | [Repo](https://github.com/fobiat/sbox-skill) · [sbox.game](https://sbox.game/fobiat/sbox_mcp_server/) · [Blog](https://fobiat.dev/blog/p/sbox-skill) |
+| **openBPM** | Tap-tempo BPM counter and beatmatch assistant for vinyl DJing on an ESP32: booth-legible digits, pitch %, and a drift timer. | [Repo](https://github.com/fobiat/openBPM) · [Site](https://fobiat.dev/openbpm) |
 | **fobiat.dev** | This domain: an Astro landing page on Cloudflare Workers, mounting the project sites below it at their own paths. | [Repo](https://github.com/fobiat/fobiat.dev) |
-| **Rivet** | Rebuild a workstation from a commit. Git-native environment snapshots for Linux and macOS, recording the packages and config you approve rather than a disk image. Private, close to release. | [fobiat.dev/rivet](https://fobiat.dev/rivet) · [Docs](https://fobiat.dev/rivet/docs/introduction/) |
+| **Rivet** | Rebuild a workstation from a commit. Git-native environment snapshots for Linux and macOS, recording the packages and config you approve rather than a disk image. Private, close to release. | [Site](https://fobiat.dev/rivet) · [Docs](https://fobiat.dev/rivet/docs/introduction/) |
 | **cairn** | UK live incident service, honest about what it doesn't know. Private. | — |
-| **Applejack** | A scarcity-driven city roleplay framework for [S&box](https://sbox.game), a ground-up reimagining of the Garry's Mod gamemode of the same name, rebuilt from scratch in C# on Source 2. Private, most active thing here day to day. | [fobiat.dev/applejack](https://fobiat.dev/applejack) · [Docs](https://fobiat.dev/applejack/docs/player/) |
-| **openDVS** | An open-source Digital Vinyl System: a clean-room Rust timecode engine, a freely-pressable timecode vinyl format, and open hardware that doubles as a class-compliant USB audio interface. Private while the format settles. | — |
-| **Ohmic Labs** | A modular handheld instrument platform: one ESP32 + OLED + encoder core hosting a menu of precision test instruments, starting with a PT100 RTD simulator and a 4-20 mA loop calibrator. Private. | — |
-| **rivet-workstation** | An AI-first developer workstation: a YAML file becomes a reproducible, running project workspace, owned by a daemon, restorable onto a fresh machine via Rivet. Private, quietest of these right now. | [fobiat.dev/rivet-workstation](https://fobiat.dev/rivet-workstation) · [Docs](https://fobiat.dev/rivet-workstation/docs/plan/) |
+| **Applejack** | A scarcity-driven city roleplay framework for [S&box](https://sbox.game), a ground-up reimagining of the Garry's Mod gamemode of the same name, rebuilt from scratch in C# on Source 2. Private, most active thing here day to day. | [Site](https://fobiat.dev/applejack) · [Docs](https://fobiat.dev/applejack/docs/player/) |
+| **openDVS** | An open-source Digital Vinyl System: a clean-room Rust timecode engine, a freely-pressable timecode vinyl format, and open hardware that doubles as a class-compliant USB audio interface. Private while the format settles. | [Blog](https://fobiat.dev/blog/p/opendvs) |
+| **Ohmic Labs** | A modular handheld instrument platform: one ESP32 + OLED + encoder core hosting a menu of precision test instruments, starting with a PT100 RTD simulator and a 4-20 mA loop calibrator. Private. | [Blog](https://fobiat.dev/blog/p/ohmic-labs) |
+| **rivet-workstation** | An AI-first developer workstation: a YAML file becomes a reproducible, running project workspace, owned by a daemon, restorable onto a fresh machine via Rivet. Private, quietest of these right now. | [Site](https://fobiat.dev/rivet-workstation) · [Docs](https://fobiat.dev/rivet-workstation/docs/plan/) |
 
 ---
+
+<p align="center">
+  <a href="https://github.com/fobiat"><img src="https://img.shields.io/badge/vibe--coded-0%25-critical?style=flat-square" alt="vibe-coded 0%"></a><br>
+  <i><sub>trust me</sub></i>
+</p>
 
 [kyle@fobiat.dev](mailto:kyle@fobiat.dev) · [fobiat.dev/contact](https://fobiat.dev/contact)
