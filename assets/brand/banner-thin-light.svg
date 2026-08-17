@@ -1,0 +1,19 @@
+<svg width="1200" height="110" viewBox="0 0 1200 110" xmlns="http://www.w3.org/2000/svg">
+  <!-- for GitHub's light theme: transparent background, dark wordmark -->
+  <g transform="translate(46,55)" stroke="#1fae82" fill="none" stroke-linecap="round">
+    <path d="M -8,20 A 22,22 0 1 1 22,20" stroke-width="6"/>
+    <path d="M -16,26 A 30,30 0 1 1 30,26" stroke-width="6" opacity="0.75"/>
+    <path d="M -24,32 A 38,38 0 1 1 38,32" stroke-width="6" opacity="0.5"/>
+    <circle cx="-9" cy="21" r="5" fill="#1fae82" stroke="none"/>
+  </g>
+
+  <text x="108" y="70" font-family="Noto Sans Mono, monospace" font-weight="700"
+        font-size="44" fill="#0d1512">fobiat</text>
+
+  <rect x="360" y="40" width="2" height="30" fill="#c7d3cf"/>
+
+  <text x="384" y="63" font-family="Noto Sans Mono, monospace" font-weight="400"
+        font-size="20" fill="#4a6b60">fobiat.dev</text>
+
+  <rect x="0" y="106" width="1200" height="4" fill="#1fae82"/>
+</svg>
