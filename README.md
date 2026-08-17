@@ -1,5 +1,7 @@
 <a href="https://fobiat.dev"><img src="assets/brand/banner-dark.png" alt="fobiat" width="100%"></a>
 
+![vibe-coded](https://img.shields.io/badge/vibe--coded-0%25-critical?style=flat-square) *(trust me)*
+
 # Kyle
 
 I build the tools I couldn't find elsewhere: a self-hosted homelab to run
