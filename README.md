@@ -6,8 +6,6 @@
   </picture>
 </a>
 
-# Kyle
-
 I build the tools I couldn't find elsewhere: a self-hosted homelab to run
 everything else on, an AI agent skill so coding agents stop guessing at an
 unfamiliar game engine's API, workstation backups that are git commits
